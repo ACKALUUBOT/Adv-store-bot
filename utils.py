@@ -1,7 +1,7 @@
 from datetime import datetime, timedelta
 import config
 from database import users_col
-from program.enums import ParseMode
+from pyrogram.enums import ParseMode
 
 
 def get_time_string(mins: int) -> str:
