@@ -4,4 +4,4 @@ motor
 razorpay==1.4.1
 Flask==3.0.3
 APScheduler==3.10.4
-
+gunicorn
