@@ -206,8 +206,7 @@ async def handle_paid(client: Client, call: CallbackQuery):
     )
 
 
-# Private Message Handler for Screenshot Receipt
-@Client.on_message(filters.private & ~filters.command)
+@Client.on_message(filters.private & ~filters.regex(r"^/"))
 async def process_screenshot_input(client: Client, message: Message):
     user_id = message.from_user.id
     if user_id not in PAYMENT_STEPS:
