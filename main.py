@@ -1,7 +1,7 @@
 import asyncio
 import os
 from threading import Thread
-from pyrofork import Client
+from pyrogram import Client
 import config
 from database import init_db
 from server import app as flask_app
